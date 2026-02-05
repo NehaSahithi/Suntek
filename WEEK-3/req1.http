@@ -1,0 +1,22 @@
+## read all products
+GET http://localhost:3000/product-api/products
+### read product by Object id
+    GET http://localhost:3000/product-api/products/60f7f9c2b4d1c72f88e4d123
+### Create a new product
+POST http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+    "pid": "P1001",
+    "productName": "Laptop",
+    "price": 75000
+}
+###update product
+PUT http://localhost:3000/product-api/products/69805e0024f0a748287f3961
+Content-Type: application/json
+
+{
+    "pid": "P1002",
+    "productName": "phone",
+    "price": 65000
+}

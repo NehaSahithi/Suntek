@@ -1,0 +1,37 @@
+### Read all users
+GET http://localhost:3000/user-api/users
+###read user by Object id
+GET http://localhost:3000/user-api/users/697dc127130b40a6badebf62
+
+###  Create a new user
+POST http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "username": "neha",
+    "password": "neha123",
+    "age": 22
+}
+### update user
+PUT http://localhost:3000/user-api/users/698057a424f0a748287f394d
+Content-Type: application/json
+
+{
+    "username": "nehas",
+    "password": "neha",
+    "age": 23
+}
+### delete user
+DELETE http://localhost:3000/user-api/users/69805d6424f0a748287f3957
+### User authentication (login) req
+POST http://localhost:3000/user-api/users/auth
+Content-Type: application/json
+
+{
+    "username": "neha",
+    "password": "neha123"
+}
+
+### req for protected route
+GET http://localhost:3000/user-api/test
+
