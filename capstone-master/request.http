@@ -1,0 +1,117 @@
+### User Register
+POST http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+  "firstName": "snigdha",
+  "lastName": "reddy",
+  "email": "snigdhareddy@gmail.com",
+  "password": "lucky@2005",
+  "profileImageUrl": "https://example.com/avatars/user.png"
+}
+
+### Authenticate User
+POST http://localhost:3000/common-api/authenticate
+Content-Type: application/json
+
+{
+  "email": "snigdhareddy@gmail.com",
+  "password": "sreeja@2005"
+}
+###AUTHOR REGISTER
+POST http://localhost:3000/author-api/users
+Content-Type: application/json
+
+{
+  "firstName": "sreethan",
+  "lastName": "reddy",
+  "email": "sreethan@gmail.com",
+  "password": "candy@2005",
+  "profileImageUrl": "https://example.com/avatars/author.png"
+}
+
+### Authenticate author
+POST http://localhost:3000/common-api/authenticate
+Content-Type: application/json
+
+{
+  "email": "sreethan@gmail.com",
+  "password": "candy@2005"
+}
+
+###Create article
+POST http://localhost:3000/author-api/articles
+Content-Type: application/json
+
+{
+  "author":"698dca7de624187dc427d883",
+  "title":"programming in python",
+  "category":"programming",
+  "content":"depth of python"
+}
+### Read articles of a author
+GET http://localhost:3000/author-api/articles/698dca7de624187dc427d883
+
+###update article
+PUT http://localhost:3000/author-api/articles
+Content-Type: application/json
+
+{
+  "author":"698dca7de624187dc427d883",
+  "articleId":"698dcaa4e624187dc427d887",
+  "title":"programming in c++",
+  "catogery":"programming updated",
+  "content":"friends with c++"
+
+}
+
+### Delete article
+DELETE http://localhost:3000/author-api/articles/698dd664335c5db857259b11
+
+
+
+
+### read all articles of the user
+GET http://localhost:3000/user-api/users
+
+### Comment with Bearer token
+PUT http://localhost:3000/user-api/users/comment
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OThkY2E3N2U2MjQxODdkYzQyN2Q4ODAiLCJyb2xlIjoiVVNFUiIsImVtYWlsIjoic25pZ2RoYXJlZGR5QGdtYWlsLmNvbSIsImlhdCI6MTc3MDkwNjU0NSwiZXhwIjoxNzcwOTEwMTQ1fQ.5x7iy9x2dD7lVe8IriZ6ptap7ITdOr2eU0bFnADFaV8
+Content-Type: application/json
+
+{
+  "articleId": "698dcaa4e624187dc427d887",
+  "comment": "Book is very good"
+}
+###invalid path
+GET http://localhost:3000/user-api/hello
+### block user
+
+PUT http://localhost:3000/admin-api/block
+Content-Type: application/json
+
+{
+  "id":"698dca77e624187dc427d880"
+}
+
+### unblock user
+
+PUT http://localhost:3000/admin-api/unblock
+Content-Type: application/json
+
+{
+  "id":"698dca77e624187dc427d880"
+}
+###Change password
+PUT http://localhost:3000/common-api/change-password
+Content-Type: application/json
+
+{
+  "email": "snigdhareddy@gmail.com",
+  "currentPassword": "lucky@2005",
+  "newPassword": "sreeja@2005"
+}
+### logout
+POST http://localhost:3000/common-api/logout
+
+
