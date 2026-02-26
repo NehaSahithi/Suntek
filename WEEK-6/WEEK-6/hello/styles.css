@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rouge+Script&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: rgb(215, 223, 225);
+  padding: 90px 100px;
+}
+header h1{
+  font-family:'Times New Roman', Times, serif;
+  font-weight:lighter;
+  font-size:4rem;
+  margin-bottom: 1rem;
+  overflow-wrap: normal;
+}
+
+header button{
+  margin-top: 1rem;
+  border: none;
+  width: 140px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgb(20, 122, 224);
+  color: white;
+}
+
+.row{
+  display: flex;
+  margin: 50px 100px;
+  justify-content:space-between;
+}
+
+.row .card{
+  min-width: 18rem;
+  width: 20rem;
+  height: 10rem;
+}
+
+.card h3{
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.card button{
+  margin-top: 20px;
+  border: none;
+  width: 120px;
+  height: 30px;
+  background-color: gray;
+  color: white;
+}
+
+hr, footer{
+  margin: 50px 100px;;
+}

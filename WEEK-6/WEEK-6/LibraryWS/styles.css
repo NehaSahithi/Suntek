@@ -1,0 +1,52 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h3{
+  color: rgb(226, 15, 15);
+  padding-left: 3rem;
+  padding-top: 1rem;
+}
+
+.main{
+  margin-top: 10px;
+  background-color: rgb(213, 21, 21);
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 28rem;
+}
+
+.content{
+  margin-left: 4rem;
+}
+
+.content p{
+  margin-top: 1rem;
+}
+
+.logo img{ 
+  height: 300px;
+  width: 300px;
+  margin-left: 10rem;
+}
+
+.foot{
+  background-color: rgb(226, 15, 15);
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards{
+  color: rgb(209, 191, 191);
+  background-color: rgb(148, 8, 8);
+  padding: 30px 40px;
+  margin-right: 2px;
+  height: 23rem;
+}
+
+.cards h4{
+  padding-bottom: 20px;
+}
